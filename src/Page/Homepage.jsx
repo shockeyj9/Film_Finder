@@ -9,11 +9,11 @@ const Homepage = () => {
 
   useInitalMovieLoad();
   return (
-    <div className="app">
+    <main className="app">
       <Header />
       <SearchBar />
       {movies?.length > 0 ? <MovieCards /> : <NoneFound />}
-    </div>
+    </main>
   );
 };
 

@@ -5,7 +5,7 @@ const SearchBar = () => {
   const { setSearchTerm, searchTerm, searchMovies } = useMovie();
 
   return (
-    <div className="search">
+    <section className="search">
       <input
         placeholder="Search for movies"
         value={searchTerm}
@@ -16,7 +16,7 @@ const SearchBar = () => {
         alt="Search"
         onClick={() => searchMovies(searchTerm)}
       />
-    </div>
+    </section>
   );
 };
 

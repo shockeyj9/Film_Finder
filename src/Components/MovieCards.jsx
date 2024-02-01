@@ -5,11 +5,11 @@ const MovieCards = () => {
   const { movies } = useMovie();
 
   return (
-    <div className="container">
+    <section className="container">
       {movies.map((movie) => (
         <MovieCard movie={movie} />
       ))}
-    </div>
+    </section>
   );
 };
 
